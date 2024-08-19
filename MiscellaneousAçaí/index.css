@@ -1,0 +1,50 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#topo{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.geral {
+    background-color: #ff68f7;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 230px;
+}
+
+.geral {
+    padding: 10px;
+    margin-top: 10px;
+
+}
+.geral li {
+    background-color: #ff68f7
+    
+}
+.geral li:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+#topo .geral{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.carrossel {
+    width: 50%;
+    
+}
+
+.carrossel {
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 1.5;
+    
+}
+
+

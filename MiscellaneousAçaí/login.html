@@ -6,16 +6,17 @@
 </head>
 <body>
     <div class="pg">
-     <form method="POST" class="formLogin" action="index.html" method="post">
-        <h1>Login</h1>
-        <h2>Bem vindo à Miscellaneous Açaí!</h2> 
-        <p>Digite seus dados</p>
-        <label for="email">E-mail</label>
-        <input type="email" placeholder="Digite seu e-mail" id="email" required/>
-        <label for="password">Senha</label>
-        <input type="password" placeholder="Insira a senha" id="senha" required/>
-        <input type="submit" value="Acessar" class="button"onclick="verificacao()" href="pagina inicial.html"/>
-     </form>
+        <form class="formLogin" method="post" name="formLogin" action="index.html" onsubmit="return validacao(), validacao2()">
+            <h1>Login</h1>
+            <h2>Bem vindo à Miscellaneous Açaí!</h2> 
+            <p>Digite seus dados</p>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" name="email" id="email"/>
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Insira a senha" name="senha" id="senha"/>
+            <input type="submit" value="Acessar" class="button"/>
+        </form>
     </div>
 </body>
+<script src="login.js"></script>
 </html>

@@ -1,10 +1,12 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    margin-top: 225px;
     padding: 0;
     color: #130330;
     background-color: rgb(83, 39, 112);
+    width: 940px;
 }
 
 .page {

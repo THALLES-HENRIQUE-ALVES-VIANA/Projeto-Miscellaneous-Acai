@@ -1,11 +1,14 @@
-var x = document.getElementById("email").value;
-var y = document.getElementById("senha").value;
-function verificacao(){
-    if(x == "" || y == ""){
-        document.getElementById("email").style.borderColor = "red";
-        document.getElementById("senha").style.borderColor = "red";
+function validacao() {
+    let x = document.forms["formLogin"]["email"].value;
+    if (x == "") {
+      document.getElementById("email").style.borderColor = "red";
+      return false;
     }
-    else{
-        
+}
+function validacao2() {
+    let y = document.forms["formLogin"]["senha"].value;
+    if (y == "") {
+      document.getElementById("senha").style.borderColor = "red";
+      return false;
     }
 }

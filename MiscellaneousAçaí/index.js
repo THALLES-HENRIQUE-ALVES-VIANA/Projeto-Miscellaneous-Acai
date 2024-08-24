@@ -5,6 +5,7 @@ var banners = [
 ];
 
 var bannerAtual = 0;
+var bannerAtual2 = banners.length - 1;
 
 function trocaBanner(){
     bannerAtual++;
@@ -12,5 +13,14 @@ function trocaBanner(){
         bannerAtual = 0;
     }
     banner.src = banners[bannerAtual];
+    bannerAtual2 = bannerAtual;
 }
-setInterval(trocaBanner, 2000); 
+
+function voltaBanner(){
+    bannerAtual2--;
+    if(bannerAtual2 == -1){
+        bannerAtual2 = banners.length - 1;
+    }
+    banner.src = banners[bannerAtual2];
+    bannerAtual = bannerAtual2;
+}

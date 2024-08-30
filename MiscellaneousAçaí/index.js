@@ -1,7 +1,7 @@
 var banner = document.querySelector('.carrossel');
 var banners = [
-    'imagens/acai.jpg',
-    'imagens/suco_acai.jpg'
+    'imagens/img_carrossel1.png',
+    'imagens/img_carrossel2.png'
 ];
 
 var bannerAtual = 0;

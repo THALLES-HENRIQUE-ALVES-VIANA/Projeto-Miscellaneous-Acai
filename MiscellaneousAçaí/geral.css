@@ -31,7 +31,6 @@ body {
     text-transform: uppercase;
     font-size:x-large;
     font-family: Arial, Helvetica, sans-serif;
-    width: 1203px;
     padding: 10px;
     margin-left: 80px;
     display:inline-block;
@@ -50,6 +49,7 @@ body {
 }
 
 .conta {
+    float: right;
     background-color: #b4b4b4;
     font-weight: bold;
     text-transform: uppercase;
@@ -57,10 +57,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     padding-top: 28px;
-    padding-bottom: 18px;
-    display: inline-block;
+    padding-bottom: 19px;
     position: relative;
-    top: -21px;
 }
 .conta li:hover{
     transform: scale(1.01);
@@ -70,6 +68,7 @@ body {
 .conta li{
     display: inline-block;
     margin-right: 10px;
+    margin-top: 11px;
 }
 
 .conta ul {

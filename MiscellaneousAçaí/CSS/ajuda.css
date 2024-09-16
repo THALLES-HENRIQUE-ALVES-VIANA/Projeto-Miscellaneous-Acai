@@ -1,0 +1,62 @@
+.pg {
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    height: 425px;
+}
+.pg h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.formAjuda{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.formAjuda label{
+    margin: 10px;
+    font-size: 25px;
+}
+.formAjuda textarea{
+    width: 300px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px 12px;
+    resize: none;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+.formAjuda textarea:focus{
+    height: 250px;
+}
+.formAjuda h1{
+    margin-top: 100px;
+    text-align: center;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #a637eb;
+    font-size: 20px;
+    color: white;
+}
+.informacoes{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 150px;
+}
+.informacoes h2{
+    font-size: 40px;
+}
+.informacoes p{
+    font-size: 30px;
+}

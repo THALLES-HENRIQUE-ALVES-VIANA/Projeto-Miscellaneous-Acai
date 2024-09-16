@@ -38,78 +38,62 @@
  
 /*---------------------------------*/
 
-.cookies {
-  width: 300px;
-  height: 220px;
+.cookies-mensagem{
+  width: 30%;
+  height: 30%;
   background-color: #eaeaea;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 30px;
-  gap: 13px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+  position: fixed;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 15px;
+  z-index: 999;
 }
-  
-#cookieSvg {
-  width: 50px;
-}
-  
-#cookieSvg g path {
-  fill: rgb(97, 81, 81);
-}
-  
-.cookieHeading {
+
+
+.cookies-mensagem .cookies-titulo{
   font-size: 1.2em;
   font-weight: 800;
-  color: rgb(26, 26, 26);
+  color: #250937;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+
 }
-  
-.cookieDescription {
-  text-align: center;
-  font-size: 0.7em;
+
+
+.cookies-mensagem .cookies-texto{
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  font-size: 1.0em;
   font-weight: 600;
   color: rgb(99, 99, 99);
 }
-  
-.buttonContainer {
-  display: flex;
-  gap: 20px;
-  flex-direction: row;
+
+.cookies-mensagem .cookies-botao{
+  margin-left: 30px;
 }
-  
-.acceptButton {
-  width: 80px;
-  height: 30px;
-  background-color: #651d92;
-  transition-duration: .2s;
-  border: none;
-  color: rgb(241, 241, 241);
+
+.cookies-mensagem .cookies-botao .botao-aceitar, .botao-negar{
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.cookies-mensagem .cookies-botao button{
+  background-color: #250937;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 40px;
   cursor: pointer;
-  font-weight: 600;
-  border-radius: 20px;
+  transition: .2s;
 }
-  
-.declineButton {
-  width: 80px;
-  height: 30px;
-  background-color: #b4b4b4;
-  transition-duration: .2s;
-  color: rgb(46, 46, 46);
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 20px;
+
+.cookies-mensagem .cookies-botao button:hover{
+  transform: scale(0.9)
 }
-  
-.declineButton:hover {
-  background-color: #ce0000;
-  transition-duration: .2s;
-}
-  
-.acceptButton:hover {
-  background-color:#fbcd24;
-  transition-duration: .2s;
-}
+

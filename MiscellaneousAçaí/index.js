@@ -24,3 +24,11 @@ function voltaBanner(){
     banner.src = banners[bannerAtual2];
     bannerAtual = bannerAtual2;
 }
+
+function aceito(){
+    document.querySelector(".cookies-mensagem").remove();
+}
+
+function nego(){
+    document.querySelector(".cookies-mensagem").remove();
+}

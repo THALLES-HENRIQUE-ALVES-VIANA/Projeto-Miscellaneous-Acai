@@ -181,6 +181,8 @@ footer {
     background-color: #eaeaea;
     width: 1880px;
     height: 250px;
+    position: absolute;
+    bottom: 0px;
 }
 
 #insta, #twt, #yt, #face {

@@ -113,3 +113,17 @@
   background-color:#fbcd24;
   transition-duration: .2s;
 }
+.pop-up{
+  float: right; 
+  background-color: white;
+  width: 350px;
+  border-radius: 10px;
+  position:sticky
+}
+.pop-up h2{
+  padding: 20px;
+  text-align: center;
+}
+.pop-up img{
+  width: 20px;
+}

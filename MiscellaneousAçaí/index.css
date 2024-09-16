@@ -96,4 +96,8 @@
 .cookies-mensagem .cookies-botao button:hover{
   transform: scale(0.9)
 }
-
+  
+.acceptButton:hover {
+  background-color:#fbcd24;
+  transition-duration: .2s;
+}

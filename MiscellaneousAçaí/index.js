@@ -25,6 +25,10 @@ function voltaBanner(){
     bannerAtual = bannerAtual2;
 }
 
+function popup(){
+    document.querySelector(".pop-up").remove();
+}
+
 function aceito(){
     document.querySelector(".cookies-mensagem").remove();
 }

@@ -1,6 +1,6 @@
 .carrossel {
-    height: 250px;
-    width: 1920px;
+    height: 250px auto;
+    width: 1879px auto;
 }
 
 .carrossel-container {
@@ -34,110 +34,82 @@
 
 .vem:hover, .vai:hover {
     background-color: rgba(0,0,0,0.8);
-  }
-  
-
+}
+ 
 /*---------------------------------*/
 
-.avaliação {
-    display: inline-block;
-  }
-  
-  .avaliação input {
-    display: none;
-  }
-  
-  .avaliação label {
-    float: right;
-    cursor: pointer;
-    color: #ccc;
-    transition: color 0.3s;
-  }
-  
-  .avaliação label:before {
-    content: '\2605';
-    font-size: 30px;
-  }
-  
-  .avaliação input:checked ~ label,
-  .avaliação label:hover,
-  .avaliação label:hover ~ label {
-    color: #6f00ff;
-    transition: color 0.3s;
-  }
- 
 .cookies {
-    width: 300px;
-    height: 220px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 30px;
-    gap: 13px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
-  }
+  width: 300px;
+  height: 220px;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 13px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+}
   
-  #cookieSvg {
-    width: 50px;
-  }
+#cookieSvg {
+  width: 50px;
+}
   
-  #cookieSvg g path {
-    fill: rgb(97, 81, 81);
-  }
+#cookieSvg g path {
+  fill: rgb(97, 81, 81);
+}
   
-  .cookieHeading {
-    font-size: 1.2em;
-    font-weight: 800;
-    color: rgb(26, 26, 26);
-  }
+.cookieHeading {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: rgb(26, 26, 26);
+}
   
-  .cookieDescription {
-    text-align: center;
-    font-size: 0.7em;
-    font-weight: 600;
-    color: rgb(99, 99, 99);
-  }
+.cookieDescription {
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(99, 99, 99);
+}
   
-  .buttonContainer {
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-  }
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
   
-  .acceptButton {
-    width: 80px;
-    height: 30px;
-    background-color: #7b57ff;
-    transition-duration: .2s;
-    border: none;
-    color: rgb(241, 241, 241);
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 20px;
-  }
+.acceptButton {
+  width: 80px;
+  height: 30px;
+  background-color: #651d92;
+  transition-duration: .2s;
+  border: none;
+  color: rgb(241, 241, 241);
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+}
   
-  .declineButton {
-    width: 80px;
-    height: 30px;
-    background-color: rgb(218, 218, 218);
-    transition-duration: .2s;
-    color: rgb(46, 46, 46);
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 20px;
-  }
+.declineButton {
+  width: 80px;
+  height: 30px;
+  background-color: #b4b4b4;
+  transition-duration: .2s;
+  color: rgb(46, 46, 46);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+}
   
-  .declineButton:hover {
-    background-color: #ebebeb;
-    transition-duration: .2s;
-  }
+.declineButton:hover {
+  background-color: #ce0000;
+  transition-duration: .2s;
+}
   
-  .acceptButton:hover {
-    background-color: #9173ff;
-    transition-duration: .2s;
-  }
+.acceptButton:hover {
+  background-color:#fbcd24;
+  transition-duration: .2s;
+}

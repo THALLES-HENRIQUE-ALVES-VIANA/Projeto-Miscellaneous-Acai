@@ -6,6 +6,8 @@
 body {
     background-color:#651d92;
     font-family: Arial, Helvetica, sans-serif; 
+    margin: 0;
+    padding: 0;  
 }
 
 #topo{
@@ -56,8 +58,8 @@ body {
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
-    padding-top: 28px;
-    padding-bottom: 19px;
+    padding-top: 15px;
+    padding-bottom: 14px;
     position: relative;
 }
 .conta li:hover{
@@ -173,3 +175,99 @@ body {
 #log:hover:after{
     width: 100%;
 }
+
+/*---------------FOOTER------------------*/
+footer {
+    background-color: #eaeaea;
+    width: 1880px;
+    height: 250px;
+}
+
+#insta, #twt, #yt, #face {
+    padding-left: 20px;
+    padding-right: 20px;
+    width:40px;
+    display: inline;
+}
+
+.redes {
+    position:relative;
+    top: 50px;
+    left: 400px;
+}
+
+#linha1 {
+    position: relative;
+    top: 20px;
+}
+
+.texto1{
+    position:relative;
+    top: 40px;
+    left: 420px;
+}
+
+.texto2{
+    position: relative;
+    top: -30px;
+    left: 1140px;
+}
+
+.texto3{
+    position: relative;
+    top: -10px;
+    right: 468px;
+}
+
+.texto4 {
+    position: relative;
+    top: 4px;
+    left: 970px;
+}
+
+.avaliação {
+    position: relative;
+    top: 50px;
+    left: 530px;
+}
+
+#titulo {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: rgb(26, 26, 26);
+}
+  
+#subtitulo {
+    font-size: 1.0em;
+    font-weight: 600;
+    color: rgb(99, 99, 99);
+    text-align: right;
+}
+   
+.avaliação {
+    display: inline-block;
+}
+    
+.avaliação input {
+    display: none;
+}
+    
+.avaliação label {
+    float: right;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+}
+    
+.avaliação label:before {
+    content: '\2605';
+    font-size: 30px;
+}
+    
+.avaliação input:checked ~ label,
+.avaliação label:hover,
+.avaliação label:hover ~ label {
+    color: #651d92;
+    transition: color 0.3s;
+}
+/*---------------FOOTER------------------*/

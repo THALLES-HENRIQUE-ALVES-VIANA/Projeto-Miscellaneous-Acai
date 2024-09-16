@@ -24,3 +24,7 @@ function voltaBanner(){
     banner.src = banners[bannerAtual2];
     bannerAtual = bannerAtual2;
 }
+
+function popup(){
+    document.querySelector(".pop-up").remove();
+}

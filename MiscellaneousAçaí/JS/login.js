@@ -1,16 +1,16 @@
 function validacao() {
-    let x = document.forms["formLogin"]["email"].value;
-    let y = document.forms["formLogin"]["senha"].value;
-    if (x == "") {
+    let email = document.forms["formLogin"]["email"].value;
+    let senha = document.forms["formLogin"]["senha"].value;
+    if (email == "") {
         document.getElementById("email").style.borderColor = "red";
-        if (y == ""){
+        if (senha == ""){
             document.getElementById("senha").style.borderColor = "red";
             return false;
         }
         return false;
     }
     else{
-        if (y == ""){
+        if (senha == ""){
             document.getElementById("senha").style.borderColor = "red";
             return false;
         }

@@ -1,7 +1,7 @@
 document.querySelector('.btn').addEventListener("click", problema);
 function problema(){
-    var x = document.getElementById('problem').value;
-    if(x == ""){
+    var caixaTexto = document.getElementById('problem').value;
+    if(caixaTexto == ""){
         return false;
     }
     else{

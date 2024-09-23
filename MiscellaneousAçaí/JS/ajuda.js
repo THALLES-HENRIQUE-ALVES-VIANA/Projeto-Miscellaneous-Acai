@@ -9,3 +9,9 @@ function problema(){
         document.querySelector(".formAjuda").innerHTML = text;
     }
 }
+
+window.addEventListener("keydown", function (event) {
+    if(event.key == "Enter"){
+        problema();
+    }
+});

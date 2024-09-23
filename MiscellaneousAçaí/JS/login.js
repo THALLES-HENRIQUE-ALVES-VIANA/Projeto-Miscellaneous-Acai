@@ -16,3 +16,9 @@ function validacao() {
         }
     }
 }
+
+window.addEventListener("keydown", function (event) {
+    if(event.key == "Enter"){
+        validacao();
+    }
+});

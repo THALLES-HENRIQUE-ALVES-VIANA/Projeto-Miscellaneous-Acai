@@ -1,7 +1,7 @@
 document.querySelector('.btn').addEventListener("click", problema);
 function problema(){
-    var x = document.getElementById('problem').value;
-    if(x == ""){
+    var problema = document.getElementById('problem').value;
+    if(problema == ""){
         return false;
     }
     else{

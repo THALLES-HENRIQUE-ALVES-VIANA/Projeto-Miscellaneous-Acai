@@ -2,7 +2,9 @@ function armazenarInfoLogin() {
     var puxarEmail = document.getElementById("email").value;    
     var puxarSenha = document.getElementById("senha").value;
     localStorage.setItem("email", puxarEmail);
-    localStorage.getItem("email");    
     localStorage.setItem("senha", puxarSenha);
-    localStorage.getItem("senha");
 }
+/*
+  Function armazenarInfoLogin: Armazena as informações de login
+  digitadas pelo usuario no armazenamento local
+*/ 

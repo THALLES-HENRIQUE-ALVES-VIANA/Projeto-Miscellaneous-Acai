@@ -29,10 +29,25 @@ function popup(){
     document.querySelector(".pop-up").remove();
 }
 
-function aceito(){
-    document.querySelector(".cookies-mensagem").remove();
+/*aceito() = Aceita os cookies e junto com a função apagar(), faz com que a mensagem não apareça mais
+  nego() = Nega os cookies e junto com a função apagar(), faz com que a mensagem não apareça mais
+  apagar() = Remove a mensagem de cookies*/
+function aceito(){  
+    localStorage.setItem("cookies", "apagado");
+    apagar();
 }
 
 function nego(){
-    document.querySelector(".cookies-mensagem").remove();
+    localStorage.clear()
+    localStorage.setItem("cookies", "apagado");
+    apagar();
 }
+
+function apagar(){
+    if(localStorage.getItem("cookies") == "apagado"){
+        document.querySelector(".cookies-mensagem").remove();
+    }
+}
+
+document.addEventListener("DOMContentLoaded", apagar());
+

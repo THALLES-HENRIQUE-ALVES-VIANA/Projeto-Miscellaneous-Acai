@@ -8,3 +8,16 @@ function armazenarInfoLogin() {
   Function armazenarInfoLogin: Armazena as informações de login
   digitadas pelo usuario no armazenamento local
 */ 
+function proxima(){
+    document.getElementById("first-pg").remove();
+}
+
+window.addEventListener("keydown", tecla);
+function tecla (event) {
+    if(event.key == "Enter"){
+        proxima();
+    }
+};
+/*função proxima: segue para as outras informações de cadastro
+  função tecla: programa a tecla "enter" do teclado para executar a função proxima;
+*/

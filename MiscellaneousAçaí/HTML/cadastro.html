@@ -12,6 +12,18 @@
             <h1>Cadastro</h1>
             <h2>Bem vindo à Miscellaneous Açaí!</h2> 
             <p>Digite seus dados</p>
+            <label for="nome">Nome Completo</label>
+            <input type="text" placeholder="Digite seu nome" name="nome" id="nome"/>
+            <label for="cpf">CPF</label>
+            <input type="text" placeholder="Insira seu CPF" name="cpf" id="cpf"/>
+            <input type="submit" value="Acessar" class="button"/>
+        </form>
+    </div>
+    <div class="pg" id="first-pg">
+        <form class="formLogin" method="post" name="formLogin" action="" onsubmit="return proxima()">
+            <h1>Cadastro</h1>
+            <h2>Bem vindo à Miscellaneous Açaí!</h2> 
+            <p>Digite seus dados</p>
             <label for="email">E-mail</label>
             <input type="email" placeholder="Digite seu e-mail" name="email" id="email"/>
             <label for="email-confirmar">Confirmar E-mail</label>
@@ -20,7 +32,7 @@
             <input type="password" placeholder="Insira a senha" name="senha" id="senha"/>
             <label for="senha-confirmar">Confirmar Senha</label>
             <input type="password" placeholder="Insira a senha" name="senha-confirmar" id="senha"/>
-            <input type="submit" value="Acessar" class="button" onclick="return armazenarInfoLogin()"/>
+            <input type="submit" value="Seguir" class="button"/>
         </form>
     </div>
 </body>

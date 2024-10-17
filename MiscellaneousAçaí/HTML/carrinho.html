@@ -10,7 +10,7 @@
 <body>
     <header class="container" id="topo">
         <div class="logo">
-            <a href="index.html"><img src="../imagens/logo.png"></a>
+            <a href="index.html"><img src="imagens/logo.png"></a>
         </div>
         <div class="abas">
             <ul>
@@ -25,15 +25,21 @@
                 <li id="itens"><a href="login.html" id="log">Entrar</a></li>
                 <li id="itens"><a href="cadastro.html" id="log">Cadastrar-se</a></li>
             </ul>
-            <a href="carrinho.html"><img src="../imagens/carrinho.png" id="carrinho"></a>
-            <a href="navegador.html"><img src="../imagens/lupa.png" id="lupa"></a>
+            <a href="carrinho.html"><img src="imagens/carrinho.png" id="carrinho"></a>
+            <a href="navegador.html"><img src="imagens/lupa.png" id="lupa"></a>
         </div>
     </header>
+    <main>
+        <h1>Carrinho</h1>
+        <div id="carrinho" class="carrinho-container">
+        </div>
+    </main>
     <footer>
-        <div class="elementos">
-            <p class="titulo">
-            <strong>Dê sua avaliação de atendimento</strong>
+        <div class="texto1">
+            <p id="titulo">
+            Dê sua avaliação de atendimento
             </p>
+        </div>
         <div class="avaliação">
             <input value="5" name="rating" id="star5" type="radio">
             <label for="star5"></label>
@@ -46,20 +52,32 @@
             <input value="1" name="rating" id="star1" type="radio">
             <label for="star1"></label>
         </div>
-        <div class="contato">
-            <p class="titulo"><strong>Entre em contato conosco</strong></p>
-            <p>ajuda-miscell@miscellaneous.com.br</p>
-            <p>contato-miscell@miscellaneous.com.br</p>
+        <div class="texto2">
+            <p id="titulo">
+            Entre em contato conosco
+            </p>
         </div>
+        <div class="texto3">
+            <p id="subtitulo">
+            ajuda-miscell@miscellaneous.com.br
+            <br>
+            contato-miscell@miscellaneous.com.br
+            </p>
+        </div>
+        <hr id="linha1">
         <div class="redes">
-            <a href=""><img src="../imagens/logo_facebook.png" id="face"></a>
-            <a href=""><img src="../imagens/logo_instagram.png" id="insta"></a>
-            <a href=""><img src="../imagens/logo_twitter.png" id="twt"></a>
-            <a href=""><img src="../imagens/logo_youtube.png" id="yt"></a>
-            <br>© Copyright 2024 Miscellaneous. Todos os direitos reservados.
+            <a href=""><img src="imagens/logo_facebook.png" id="face"></a>
+            <a href=""><img src="imagens/logo_instagram.png" id="insta"></a>
+            <a href=""><img src="imagens/logo_twitter.png" id="twt"></a>
+            <a href=""><img src="imagens/logo_youtube.png" id="yt"></a>
         </div>
+        <div class="texto4">
+            © Copyright 2024 Miscellaneous. Todos os direitos reservados.
         </div>
-    </footer> 
+    </footer>    
+</body>
+<script src="../JS/carrinho.js"></script>
+</html>
 </body>
 <script src="../JS/carrinho.js"></script>
 </html>

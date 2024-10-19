@@ -31,12 +31,52 @@
     </header>
     <div class="container">
         <main>
-            <h1>O que você procura?</h1>
-            <p>Encontre o açaí perfeito para você!</p>
-            <input type="text" id="urlInput" placeholder="Digite o que você deseja">
-            <button onclick="pesquisar()">Pesquisar</button>
+            <div class="pesquisa">
+                <h1>Encontre o açaí perfeito para você!</h1>
+                <input type="text" id="urlInput" placeholder="Digite o que você deseja">
+                <button onclick="pesquisar()" class="btn">Pesquisar</button>
+            </div>
             <div id="resultados">
-                
+                <li id="tradicional-no-copo">
+                    <img src="../imagens/copo-simples.png" alt="copo simples">
+                    <div class="btn-carrinho">
+                        <figcaption><h1>copo simples</h1></figcaption>
+                        <h2>R$20,00</h2>
+                        <button class="adicionar-produto" data-id="1"><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                    </div>
+                </li>
+                <li id="copo-simples">
+                    <img src="../imagens/copo-simples.png" alt="copo simples">
+                    <div class="btn-carrinho">
+                        <figcaption><h1>copo simples</h1></figcaption>
+                        <h2>R$20,00</h2>
+                        <button class="adicionar-produto" data-id="1"><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                    </div>
+                </li>
+                <li id="copo-com-morango">
+                    <img src="../imagens/copo-com-morango.png" alt="copo com morango">
+                    <div class="btn-carrinho">
+                        <figcaption><h1>copo com morango</h1></figcaption>
+                        <h2>R$25,00</h2>
+                        <button class="adicionar-produto" data-id="2"><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                    </div>
+                </li>
+                <li id="copo-com-banana">
+                    <img src="../imagens/copo-com-banana.png" alt="copo com banana">
+                    <div class="btn-carrinho">
+                        <figcaption><h1>copo com banana</h1></figcaption>
+                        <h2>R$25,00</h2>
+                        <button class="adicionar-produto" data-id="3"><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                    </div>
+                </li>
+                <li id="combo">
+                    <img src="../imagens/combo.jpg" alt="combo">
+                    <div class="btn-carrinho">
+                        <figcaption><h1> combo </h1></figcaption>
+                        <h2>R$50,00</h2>
+                        <button class="adicionar-produto" data-id="4"><a href="carrinho.html">Adicionar ao Carrinho</a></button>
+                    </div>
+                </li>
             </div>
         </main>
     </div>

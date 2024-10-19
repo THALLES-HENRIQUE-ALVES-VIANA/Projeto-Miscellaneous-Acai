@@ -1,0 +1,79 @@
+.pesquisa{
+    width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+#urlInput{
+    width: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 5px;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #a637eb;
+    font-size: 20px;
+    color: white;
+}
+#resultados li {
+    background-color: white;
+    width: 1000px;  
+    height: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    margin-top: 10px;
+    list-style: none;
+    border-radius: 50px;
+    display: none;
+}
+#resultados figcaption {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#resultados h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+#resultados li img {
+    width: 350px;
+    border-radius: 30px;
+}
+
+.btn-carrinho button{
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    height: 60px;
+    border: 3px solid #651d92;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 15px;
+    font-weight: 550;
+}
+  
+.btn-carrinho button:hover {
+    background: #651d92;
+    color: white;
+    font-size: 20px;
+}
+#resultados a{
+    text-decoration: none;
+  }
+  
+.btn-carrinho{
+    padding-left: 200px;
+}

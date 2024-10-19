@@ -10,22 +10,28 @@ const produtos = [
     "suco de açaí",
     "vitamina de açaí",
     "tigela de 1L",
-    "barca"
+    "barca",
+    "copo simples",
+    "copo com morango",
+    "copo com banana",
+    "combo"
 ];
 function pesquisar() {
-    let termo
-    
- document.getElementById('urlInput').value.toL
-    werCase();
+    let termo = document.getElementById('urlInput').value;
     
     let resultados = produtos.filter(item => item.toLowerCase().includes(termo));    
     
     let resultadoDiv = document.getElementById('resultados');
     
     if (resultados.length > 0) {
-        resultadoDiv.innerHTML = "<h3>Produtos encontrados:</h3><ul>" + resultados.map(item => "<li>" + item + "</li>").join('') + "</ul>";
+       resultados.map(item => document.getElementById(item.split(" ").join("-")).style.display = "flex");
     } else {
-    
         resultadoDiv.innerHTML = "<h3>Nenhum produto encontrado</h3>";
     }
 }
+
+window.addEventListener("keydown", function (event) {
+    if(event.key == "Enter"){
+        pesquisar();
+    }
+});

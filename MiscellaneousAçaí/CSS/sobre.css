@@ -21,4 +21,8 @@ font-size: 20px;
 .corpo{
 display: flex;
 }
+#mapa { 
+    height: 300px; 
+    width: 50%px;
+}
 

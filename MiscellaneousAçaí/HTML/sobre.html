@@ -62,10 +62,11 @@
             navigator.geolocation.getCurrentPosition(function(position) {
                 
                 const latitude = position.coords.latitude;
-                const longitude = position.coords.longitude;
+                const longitude = position.coords.longitude; // Pega as coordenadas de latitude e longitude do usuário se ele permitir
+    
 
               
-                const map = L.map('map').setView([latitude, longitude], 13);
+                const map = L.map('map').setView([latitude, longitude], 13); // localização do usuário no mapa
 
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     maxZoom: 19, 
@@ -74,11 +75,12 @@
 
               
                 const marker = L.marker([latitude, longitude]).addTo(map); 
-                marker.bindPopup("<b>Essaaefgafads !</b>").openPopup(); 
-              }, 
+                marker.bindPopup("<b>Você está aqui!</b>").openPopup(); 
+              }, // Este é uma mensagem no mapa avisando onde você está 
 
             function() {
-                alert("A geolocalização falhou. A posição padrão do mapa será usada."); 
+                alert("A geolocalização falhou. A posição padrão do mapa será usada.");
+              //Caso o usuário nao permita o uso da sua própria localização ele receberá a mensagem e será usado a localização padrão 
                 
                 const map = L.map('map').setView([-23.5505, -46.6333], 13);
                 

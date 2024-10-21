@@ -21,6 +21,7 @@ function elementos(){
   if(i == validado.length){
     return proxima();
   }
+  armazenarInfoLogin();
 }
 
 function validacao(termo){
@@ -142,6 +143,7 @@ function tecla (event) {
   função tecla: programa a tecla "enter" do teclado para executar a função proxima;
 */
 
+function armazenarInfoLogin(){
     var puxarEmail = document.getElementById("email").value;    
     var puxarSenha = document.getElementById("senha").value;
     localStorage.setItem("email", puxarEmail);

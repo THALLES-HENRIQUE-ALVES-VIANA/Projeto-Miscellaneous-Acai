@@ -53,3 +53,12 @@ body {
      background-color: rgb(83, 39, 112);
      color: rgb(255, 255, 255);
 }
+
+.requisitos p{
+    margin-bottom: 5px;
+    margin-top: -50px;
+}
+
+.requisitos ul{
+    margin-top: 5px;
+}

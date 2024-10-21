@@ -1,0 +1,138 @@
+.carrossel {
+  height: 250px auto;
+  width: 100%;
+}
+
+.carrossel-container {
+    display: inline-block;
+}
+
+.vem, .vai {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    top: 230px;
+}
+
+.vai {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.vem {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.vem:hover, .vai:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+ 
+/*---------------------------------*/
+
+.cookies-mensagem{
+  width: 100%;
+  height: 15%;
+  background-color: #eaeaea;
+  position: fixed;
+  bottom: 26%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 15px;
+  z-index: 999;
+}
+
+
+.cookies-mensagem .cookies-titulo{
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #250937;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px 20px 10px 20px;
+
+}
+
+
+.cookies-mensagem .cookies-texto{
+  display: flex;
+  align-items: center;
+  float: left;
+  text-align: justify;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(99, 99, 99);
+}
+
+.cookies-mensagem .cookies-botao{
+  margin-left: 30px;
+}
+
+.cookies-mensagem .cookies-botao .botao-aceitar, .botao-negar{
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.cookies-mensagem .cookies-botao button{
+  background-color: #250937;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.cookies-mensagem .cookies-botao button:hover{
+  transform: scale(0.9)
+}
+  
+.acceptButton:hover {
+  background-color:#fbcd24;
+  transition-duration: .2s;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #651d92;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 650px;
+  margin: auto;
+
+}
+button a {
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  width: 300px;
+  height: 60px;
+  border: 3px solid #651d92;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 20px;
+  font-weight: 550;
+  transform: 
+  translateX(150px)
+  translateY(-470px)
+ 
+}
+button a:hover {
+  background: #651d92;
+  color: white;
+  font-size: 30px;
+}

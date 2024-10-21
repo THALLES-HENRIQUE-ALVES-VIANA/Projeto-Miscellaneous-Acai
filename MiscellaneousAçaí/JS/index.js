@@ -50,4 +50,3 @@ function apagar(){
 }
 
 document.addEventListener("DOMContentLoaded", apagar());
-

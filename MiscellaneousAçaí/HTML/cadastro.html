@@ -7,24 +7,8 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <div class="pg" id="first-pg">
-        <form class="formLogin" method="post" name="formLogin" action="" onsubmit="return proxima()">
-            <h1>Cadastro</h1>
-            <h2>Bem vindo à Miscellaneous Açaí!</h2> 
-            <p>Digite seus dados</p>
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" name="email" id="email"/>
-            <label for="email-confirmar">Confirmar E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" name="email-confirmar" id="email"/>
-            <label for="senha">Senha</label>
-            <input type="password" placeholder="Insira a senha" name="senha" id="senha"/>
-            <label for="senha-confirmar">Confirmar Senha</label>
-            <input type="password" placeholder="Insira a senha" name="senha-confirmar" id="senha"/>
-            <input type="submit" value="Seguir" class="button"/>
-        </form>
-    </div>
     <div class="pg">
-        <form class="formLogin" method="post" name="formLogin" action="index.html" onsubmit="return validacao()">
+        <form class="formLogin" method="post" name="formLogin" action="index.html" onsubmit="return final()">
             <h1>Cadastro</h1>
             <h2>Bem vindo à Miscellaneous Açaí!</h2> 
             <p>Digite seus dados</p>
@@ -32,9 +16,39 @@
             <input type="text" placeholder="Digite seu nome" name="nome" id="nome"/>
             <label for="cpf">CPF</label>
             <input type="text" placeholder="Insira seu CPF" name="cpf" id="cpf"/>
+            <label for="telefone">Telefone</label>
+            <input type="text" placeholder="Insira seu telefone" name="telefone" id="telefone"/>
             <input type="submit" value="Acessar" class="button"/>
+        </form>
+    </div>
+    <div class="pg" id="first-pg">
+        <form class="formLogin" method="dialog" name="formLogin" onsubmit="return elementos()">
+            <h1>Cadastro</h1>
+            <h2>Bem vindo à Miscellaneous Açaí!</h2> 
+            <p>Digite seus dados</p>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Digite seu e-mail" name="email" id="email"/>
+            <label for="email-confirmar">Confirmar E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" name="email-confirmar" id="confirmarEmail"/>
+            <p id="confirmarEmailp"></p>
+            <label for="senha">Senha</label>
+            <input type="password" placeholder="Insira a senha" name="senha" id="senha"/>
+            <label for="senha-confirmar">Confirmar Senha</label>
+            <input type="password" placeholder="Insira a senha" name="senha-confirmar" id="confirmarSenha"/>
+            <div class="requisitos">
+                <p>A senha necessita:</p>
+                <ul>
+                    <li id="caractereEspecial">pelo menos 1 caractere especial</li>
+                    <li id="totalCaracteres">8 ou mais caracteres</li>
+                    <li id="numero">pelo menos 1 número</li>
+                    <li id="maiuscula">pelo menos 1 letra maiúscula</li>
+                </ul>
+            </div>
+            <p id="confirmarSenhap"></p>
+            <input type="submit" value="Seguir" class="button"/>
         </form>
     </div>
 </body>
 <script src="../JS/cadastro.js"></script>
 </html>
+

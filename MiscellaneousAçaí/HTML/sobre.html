@@ -7,9 +7,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
   crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""></script>
+ 
 </head>
 <body>
   <header class="container" id="topo">
@@ -51,9 +49,51 @@
     </div>
     
       <h1>Onde estamos!</h1>
-      <div id="mapa"></div>
-      <h2></h2>
+      <!-- div aonde o mapa vai ficar -->
+      <div id="map"></div> 
   
+    <!--  -->
+      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+      <script>
+        let h2 = document.querySelector("h2");// seleciona o elemento h2
+        if (navigator.geolocation) {
+           
+            
+            navigator.geolocation.getCurrentPosition(function(position) {
+                
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+
+              
+                const map = L.map('map').setView([latitude, longitude], 13);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19, 
+                    attribution: '© OpenStreetMap' 
+                }).addTo(map); 
+
+              
+                const marker = L.marker([latitude, longitude]).addTo(map); 
+                marker.bindPopup("<b>Essaaefgafads !</b>").openPopup(); 
+              }, 
+
+            function() {
+                alert("A geolocalização falhou. A posição padrão do mapa será usada."); 
+                
+                const map = L.map('map').setView([-23.5505, -46.6333], 13);
+                
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '© OpenStreetMap'
+                }).addTo(map);
+            }); 
+           
+        } else {
+            // Para o caso de o navegador não suportar a geolocalização
+            alert("Geolocalização não é suportada pelo seu navegador.");
+        }
+
+      </script>
 </main>
 <footer>
   <div class="elementos">

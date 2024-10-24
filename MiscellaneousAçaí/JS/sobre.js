@@ -23,3 +23,24 @@ var watchID = navigator.geolocation.watchPosition(sucesso, erro, { //inicia a lo
     enableHighAccuracy: true,//ativa a precisão
     timeout: 5000 //tempo de espera  
 })
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona o título e os parágrafos
+    const sectionTitle = document.querySelector("h1");
+    const paragraphs = document.querySelectorAll("main p");
+
+    // Efeito de fade-in para o título
+    sectionTitle.style.opacity = 0;
+    setTimeout(() => {
+        sectionTitle.style.transition = "opacity 1s";
+        sectionTitle.style.opacity = 1;
+    }, 100);
+
+    // Efeito de fade-in para os parágrafos
+    paragraphs.forEach((p, index) => {
+        p.style.opacity = 0;
+        setTimeout(() => {
+            p.style.transition = "opacity 1s";
+            p.style.opacity = 1;
+        }, 500 + index * 500);
+    });
+});

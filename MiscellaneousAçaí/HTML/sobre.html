@@ -1,132 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>A Miscellaneous</title>
-  <link rel="stylesheet" href="../CSS/geral.css">
-  <link rel="stylesheet" href="../CSS/sobre.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-  crossorigin=""/>
- 
+    <title>A Miscellaneous</title>
+    <link rel="stylesheet" href="../CSS/geral.css">
+    <link rel="stylesheet" href="../CSS/sobre.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 </head>
 <body>
-  <header class="container" id="topo">
-    <div class="logo">
-        <a href="index.html"><img src="../imagens/logo.png"></a>
-    </div>
-    <div class="abas">
-        <ul>
-            <li id="itens"><a href="index.html" id="ab">Home</a></li>            
-            <li id="itens"><a href="cardapio.html" id="ab">Cardápio</a></li>
-            <li id="itens"><a href="sobre.html" id="ab">A Miscellaneous</a></li>
-            <li id="itens"><a href="ajuda.html" id="ab">Ajuda</a></li>
-        </ul>
-    </div>
-    <div class="conta">
-        <ul>
-            <li id="itens"><a href="login.html" id="log">Entrar</a></li>
-            <li id="itens"><a href="cadastro.html" id="log">Cadastrar-se</a></li>
-        </ul>
-        <a href="carrinho.html"><img src="../imagens/carrinho.png" id="carrinho"></a>
-        <a href="navegador.html"><img src="../imagens/lupa.png" id="lupa"></a>
-    </div>
-</header>
-<main>
-  <h1>SOBRE NÓS</h1>
-  <p>
-    A Miscellaneous Açaí é um projeto de comércio das matérias de Programação Web 1 e Análise de projetos de Sistemas do curo de DS da ETEC PG.
-  </p>
-  <p>Feito pelos alunos do primeiro ano de desenvolvimento de sistemas: Adriel, Alice, Bryan, Larissa, Thainá e Thalles</p>
-  <p>Trata-se de uma açaiteria que não somente vende o açaí em formato de sorvete, como também outros produtos como geleias, bolos entre outros. Trazendo consigo a definição de "Miscellaneous" que significa "Variados".</p>
-  <h1>NOSSOS PRODUTOS</h1>
-    <div class="corpo">
-      <p>
-        O açaí é um fruto originado de uma palmeira que é amplamente distribuída pela região norte da América do Sul. Como alimento, o açaí pode ser consumido cru ou em forma de suco. O seu sumo é utilizado comercialmente como bebidas e junto a combinações semelhantes a sorvetes.
-      </p>
-      <p>
-        Você pode desfrutar de diversos benefícios do açaí para boa forma e saúde, mas é fundamental que você atente para as condições de preparo e combinações, pois são os acompanhamentos que podem prejudicar o equilíbrio de seu organismo.
-      </p>
-    </div>
-    
-      <h1>Onde estamos!</h1>
-      <!-- div aonde o mapa vai ficar -->
-      <div id="map"></div> 
-  
-    <!--  -->
-      <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-      <script>
-        let h2 = document.querySelector("h2");// seleciona o elemento h2
-        if (navigator.geolocation) {
-           
-            
-            navigator.geolocation.getCurrentPosition(function(position) {
-                
-                const latitude = position.coords.latitude;
-                const longitude = position.coords.longitude; // Pega as coordenadas de latitude e longitude do usuário se ele permitir
-    
+    <header class="container" id="topo">
+        <div class="logo">
+            <a href="index.html"><img src="../imagens/logo.png"></a>
+        </div>
+        <div class="abas">
+            <ul>
+                <li id="itens"><a href="index.html" id="ab">Home</a></li>            
+                <li id="itens"><a href="cardapio.html" id="ab">Cardápio</a></li>
+                <li id="itens"><a href="sobre.html" id="ab">A Miscellaneous</a></li>
+                <li id="itens"><a href="ajuda.html" id="ab">Ajuda</a></li>
+            </ul>
+        </div>
+        <div class="conta">
+            <ul>
+                <li id="itens"><a href="login.html" id="log">Entrar</a></li>
+                <li id="itens"><a href="cadastro.html" id="log">Cadastrar-se</a></li>
+            </ul>
+            <a href="carrinho.html"><img src="../imagens/carrinho.png" id="carrinho"></a>
+            <a href="navegador.html"><img src="../imagens/lupa.png" id="lupa"></a>
+        </div>
+    </header>
+    <main>
+        <h1>DESCUBRA QUEM SOMOS!</h1>
+        <p>A Miscellaneous Açaí é um projeto de comércio das matérias de Programação Web 1 e Análise de projetos de Sistemas do curso de DS da ETEC PG.</p>
+        <p>Feito pelos alunos do primeiro ano de desenvolvimento de sistemas: Adriel, Alice, Bryan, Larissa, Thainá e Thalles.</p>
+        <p>Trata-se de uma açaiteria que não somente vende o açaí em formato de sorvete, como também outros produtos como geleias, bolos entre outros. Trazendo consigo a definição de "Miscellaneous" que significa "Variados".</p>
+        
+        
+        <h1>NOSSOS PRODUTOS...</h1>
+        <div class="corpo">
+            <p>O açaí é um fruto originado de uma palmeira que é amplamente distribuída pela região norte da América do Sul. Como alimento, o açaí pode ser consumido puro ou em forma de suco. O seu suco é utilizado comercialmente como bebidas e junto a combinações semelhantes a sorvetes.</p>
+            <p>Você pode desfrutar de diversos benefícios do açaí para boa forma e saúde, mas é fundamental que você atente para as condições de preparo e combinações, pois são os acompanhamentos que podem prejudicar o equilíbrio de seu organismo.</p>
+        </div>
+        
+        <h1>ONDE ESTAMOS:</h1>
+        <div id="map"></div>
+        
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script>
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
 
-              
-                const map = L.map('map').setView([latitude, longitude], 13); // localização do usuário no mapa
+                    const map = L.map('map').setView([latitude, longitude], 13);
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                        attribution: '© OpenStreetMap'
+                    }).addTo(map);
 
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 19, 
-                    attribution: '© OpenStreetMap' 
-                }).addTo(map); 
-
-              
-                const marker = L.marker([latitude, longitude]).addTo(map); 
-                marker.bindPopup("<b>Você está aqui!</b>").openPopup(); 
-              }, // Este é uma mensagem no mapa avisando onde você está 
-
-            function() {
-                alert("A geolocalização falhou. A posição padrão do mapa será usada.");
-              //Caso o usuário nao permita o uso da sua própria localização ele receberá a mensagem e será usado a localização padrão 
-                
-                const map = L.map('map').setView([-23.5505, -46.6333], 13);
-                
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 19,
-                    attribution: '© OpenStreetMap'
-                }).addTo(map);
-            }); 
-           
-        } else {
-            // Para o caso de o navegador não suportar a geolocalização
-            alert("Geolocalização não é suportada pelo seu navegador.");
-        }
-
-      </script>
-</main>
-<footer>
-  <div class="elementos">
-      <p class="titulo">
-      <strong>Dê sua avaliação de atendimento</strong>
-      </p>
-  <div class="avaliação">
-      <input value="5" name="rating" id="star5" type="radio">
-      <label for="star5"></label>
-      <input value="4" name="rating" id="star4" type="radio">
-      <label for="star4"></label>
-      <input value="3" name="rating" id="star3" type="radio">
-      <label for="star3"></label>
-      <input value="2" name="rating" id="star2" type="radio">
-      <label for="star2"></label>
-      <input value="1" name="rating" id="star1" type="radio">
-      <label for="star1"></label>
-  </div>
-  <div class="contato">
-      <p class="titulo"><strong>Entre em contato conosco</strong></p>
-      <p>ajuda-miscell@miscellaneous.com.br</p>
-      <p>contato-miscell@miscellaneous.com.br</p>
-  </div>
-  <div class="redes">
-      <a href=""><img src="../imagens/logo_facebook.png" id="face"></a>
-      <a href=""><img src="../imagens/logo_instagram.png" id="insta"></a>
-      <a href=""><img src="../imagens/logo_twitter.png" id="twt"></a>
-      <a href=""><img src="../imagens/logo_youtube.png" id="yt"></a>
-      <br>© Copyright 2024 Miscellaneous. Todos os direitos reservados.
-  </div>
-  </div>
-</footer>   
+                    const marker = L.marker([latitude, longitude]).addTo(map);
+                    marker.bindPopup("<b>Você está aqui!</b>").openPopup();
+                }, function() {
+                    alert("A geolocalização falhou. A posição padrão do mapa será usada.");
+                    const map = L.map('map').setView([-23.5505, -46.6333], 13);
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                        attribution: '© OpenStreetMap'
+                    }).addTo(map);
+                });
+            } else {
+                alert("Geolocalização não é suportada pelo seu navegador.");
+            }
+        </script>
+    </main>
+    <footer>
+        <div class="elementos">
+            <p class="titulo"><strong>Dê sua avaliação de atendimento</strong></p>
+            <div class="avaliação">
+                <input value="5" name="rating" id="star5" type="radio">
+                <label for="star5"></label>
+                <input value="4" name="rating" id="star4" type="radio">
+                <label for="star4"></label>
+                <input value="3" name="rating" id="star3" type="radio">
+                <label for="star3"></label>
+                <input value="2" name="rating" id="star2" type="radio">
+                <label for="star2"></label>
+                <input value="1" name="rating" id="star1" type="radio">
+                <label for="star1"></label>
+            </div>
+            <div class="contato">
+                <p class="titulo"><strong>Entre em contato conosco</strong></p>
+                <p>ajuda-miscell@miscellaneous.com.br</p>
+                <p>contato-miscell@miscellaneous.com.br</p>
+            </div>
+            <div class="redes">
+                <a href=""><img src="../imagens/logo_facebook.png" id="face"></a>
+                <a href=""><img src="../imagens/logo_instagram.png" id="insta"></a>
+                <a href=""><img src="../imagens/logo_twitter.png" id="twt"></a>
+                <a href=""><img src="../imagens/logo_youtube.png" id="yt"></a>
+                <br>© Copyright 2024 Miscellaneous. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>   
 </body>
 </html>

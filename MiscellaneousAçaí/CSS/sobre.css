@@ -1,28 +1,64 @@
-h1{
+h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: blueviolet;
-    margin: 0%;
     color: rgb(248, 255, 221);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
 }
 
-main p{
+main p {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 40px;
     font-size: 20px;
+    margin: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
-.corpo p{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 60px;
-    text-align:left;
-font-size: 20px;
+#map {
+    height: 600px; /* ou qualquer altura que você preferir */
+    width: 100%; /* ou um valor específico */
+}
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Limita a largura do conteúdo */
+}
+#map {
+    height: 400px; /* Altura do mapa */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Esconde partes fora do container */
+}
+h1, h2 {
+    color: white; /* Cor do título */
+    transition: color 0.3s; /* Transição suave */
 }
 
-.corpo{
-display: flex;
+h1:hover, h2:hover {
+    color: #4B0082; /* Cor ao passar o mouse */
 }
-#map { 
-    height: 300px; 
-    width: 50%px;
+main p {
+    line-height: 1.6; /* Aumenta a altura da linha */
+    font-size: 1.3em; /* Aumenta um pouco o tamanho da fonte */
+    margin-bottom: 15px; /* Espaçamento entre parágrafos */
 }
+main p {
+    background-color: #f0f8ff; /* Fundo claro */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+main p:hover {
+    background-color: rgb(255, 205, 40); /* Mudança de cor ao passar o mouse */
+    transform: scale(1.02); /* Leve aumento no tamanho */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+#map:hover {
+    transform: scale(1.02); /* Levemente aumenta o tamanho */
+    transition: transform 0.3s; /* Suaviza a transição */
+}
+
 

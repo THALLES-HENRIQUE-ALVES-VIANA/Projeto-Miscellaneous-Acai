@@ -20,31 +20,31 @@ main p {
     transition: transform 0.2s;
 }
 #map {
-    height: 600px; /* ou qualquer altura que você preferir */
-    width: 100%; /* ou um valor específico */
+    height: 600px; 
+    width: 100%; 
 }
 main {
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px; /* Limita a largura do conteúdo */
+    max-width: 800px; 
 }
 #map {
-    height: 400px; /* Altura do mapa */
-    border-radius: 8px; /* Bordas arredondadas */
-    overflow: hidden; /* Esconde partes fora do container */
+    height: 400px; 
+    border-radius: 8px; 
+    overflow: hidden; 
 }
 h1, h2 {
-    color: white; /* Cor do título */
-    transition: color 0.3s; /* Transição suave */
+    color: white; 
+    transition: color 0.3s;
 }
 
 h1:hover, h2:hover {
-    color: #4B0082; /* Cor ao passar o mouse */
+    color: #4B0082; 
 }
 main p {
-    line-height: 1.6; /* Aumenta a altura da linha */
-    font-size: 1.3em; /* Aumenta um pouco o tamanho da fonte */
-    margin-bottom: 15px; /* Espaçamento entre parágrafos */
+    line-height: 1.6; 
+    font-size: 1.3em; 
+    margin-bottom: 15px; 
 }
 main p {
     background-color: #f0f8ff; /* Fundo claro */
@@ -54,11 +54,11 @@ main p {
 main p:hover {
     background-color: rgb(255, 205, 40); /* Mudança de cor ao passar o mouse */
     transform: scale(1.02); /* Leve aumento no tamanho */
-    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    transition: background-color 0.3s, transform 0.3s; 
 }
 #map:hover {
-    transform: scale(1.02); /* Levemente aumenta o tamanho */
-    transition: transform 0.3s; /* Suaviza a transição */
+    transform: scale(1.02); /* aumenta o tamanho */
+    transition: transform 0.3s; /* suaviza a transição */
 }
 
 

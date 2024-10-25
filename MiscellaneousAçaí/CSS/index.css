@@ -1,36 +1,3 @@
-.carrossel {
-  height: 250px auto;
-  width: 100%;
-}
-
-.carrossel-container {
-    display: inline-block;
-}
-
-.vem, .vai {
-    cursor: pointer;
-    position: absolute;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    top: 230px;
-}
-
-.vai {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.vem {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
 
 .vem:hover, .vai:hover {
     background-color: rgba(0,0,0,0.8);
@@ -101,4 +68,24 @@
 .acceptButton:hover {
   background-color:#fbcd24;
   transition-duration: .2s;
+}
+h1{
+  color:#fbcd24 
+}
+h1{
+  transform: 
+  translateX(320px)
+  translateY(70px);
+}
+#pricipal1 img{
+  
+  margin: 10px;
+  height: 200px;
+   width: 300px;
+ border-radius:25px
+}
+#pricipal1 img{
+  transform:
+  translateX(300px)
+  translateY(70px)
 }

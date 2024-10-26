@@ -20,17 +20,22 @@ function pesquisar() {
     let resultadoDiv = document.getElementById('resultados');
    //  onde os resultados vão ser exibidos 
 
+    let nenhum = document.getElementById("nenhum-resultado");
+
     for(var i = 0; i < resultadoDiv.children.length; i++){
         resultadoDiv.children[i].style.display = "none";
     }
     // ciclo de repetição para excluir todos os nós filhos do id "resultados"
     
     if (resultados.length > 0) {
-        // ver se tem produtos correspondentes 
-        
+       // ver se tem produtos correspondentes
+       document.getElementById("rodape").style.position = "relative";
+       nenhum.style.display = "none";
        resultados.map(item => document.getElementById(item.split(" ").join("-")).style.display = "flex"); // p cada produto que for encontrado muda o estilo do elemento correspondente p ser exibido 
     } else {
-        resultadoDiv.innerHTML = "<h3>Nenhum produto encontrado</h3>";
+        document.getElementById("rodape").style.position = "absolute";
+        document.getElementById("rodape").style.bottom = 0;
+        nenhum.style.display = "flex";
     }
 } 
 // se nada for encontrado vai exibir uma mensagem mostrando que não tem resultados

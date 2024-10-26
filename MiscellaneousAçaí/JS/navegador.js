@@ -1,20 +1,11 @@
 const produtos = [
-    "tradicional no copo",
-    "complementos personalizados",
-    "para presentear",
-    "trufado",
-    "açaí puro",
-    "açaí com sorvete",
-    "zero açúcar",
-    "Sorvete com complementos",
-    "suco de açaí",
-    "vitamina de açaí",
-    "tigela de 1L",
-    "barca",
     "copo simples",
     "copo com morango",
     "copo com banana",
-    "combo"
+    "combo",
+    "combo-leite-condensado",
+    "barca",
+    "vitamina"
 ];  // define um array chamado produtos com uma lista do nosso cardápio  
 
 function pesquisar() {

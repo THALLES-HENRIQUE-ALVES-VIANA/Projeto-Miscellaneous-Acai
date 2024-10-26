@@ -28,6 +28,11 @@ function pesquisar() {
     
     let resultadoDiv = document.getElementById('resultados');
    //  onde os resultados vão ser exibidos 
+
+    for(var i = 0; i < resultadoDiv.children.length; i++){
+        resultadoDiv.children[i].style.display = "none";
+    }
+    // ciclo de repetição para excluir todos os nós filhos do id "resultados"
     
     if (resultados.length > 0) {
         // ver se tem produtos correspondentes 

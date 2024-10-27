@@ -143,15 +143,27 @@ function tecla (event) {
   função tecla: programa a tecla "enter" do teclado para executar a função proxima;
 */
 
-function armazenarInfoLogin(){
-    var puxarEmail = document.getElementById("email").value;    
-    var puxarSenha = document.getElementById("senha").value;
-    localStorage.setItem("email", puxarEmail);
-    localStorage.getItem("email");    
-    localStorage.setItem("senha", puxarSenha);
-    localStorage.getItem("senha");
+function armazenarInfoCadastroInicial(){
+  var puxarEmail = document.getElementById("email").value;    
+  var puxarSenha = document.getElementById("senha").value;
+  localStorage.setItem("email", puxarEmail);
+  localStorage.getItem("email");    
+  localStorage.setItem("senha", puxarSenha);
+  localStorage.getItem("senha");
 }
+
+function armazenarInfoCadastroFinal(){
+  var puxarNome = document.getElementById("nome").value;
+  var puxarCpf = document.getElementById("cpf").value;
+  var puxarTelefone = document.getElementById("telefone").value;
+  localStorage.setItem("nome", puxarNome);
+  localStorage.getItem("nome");
+  localStorage.setItem("cpf", puxarCpf);
+  localStorage.getItem("cpf");
+  localStorage.setItem("telefone", puxarTelefone);
+  localStorage.getItem("telefone");
+} 
 /*
-  Function armazenarInfoLogin: Armazena as informações de login
-  digitadas pelo usuario no armazenamento local
+  Function armazenarInfoLoginInicial: Armazena e-mail e senha digitadas pelo usuario no armazenamento local.
+  Function armazenarInfoLoginFinal: Armazena nome, cpf e telefone digitadas pelo usuario no armazenamento local.
 */ 

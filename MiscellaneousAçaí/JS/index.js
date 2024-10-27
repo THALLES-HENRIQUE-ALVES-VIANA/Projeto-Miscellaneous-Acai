@@ -32,12 +32,12 @@ function popup(){
 /*aceito() = Aceita os cookies e junto com a função apagar(), faz com que a mensagem não apareça mais
   nego() = Nega os cookies e junto com a função apagar(), faz com que a mensagem não apareça mais
   apagar() = Remove a mensagem de cookies*/
-function aceito(){  
+function aceitar(){  
     localStorage.setItem("cookies", "apagado");
     apagar();
 }
 
-function nego(){
+function negar(){
     localStorage.clear()
     localStorage.setItem("cookies", "apagado");
     apagar();
@@ -45,7 +45,7 @@ function nego(){
 
 function apagar(){
     if(localStorage.getItem("cookies") == "apagado"){
-        document.querySelector(".cookies-mensagem").remove();
+        document.querySelector(".cookies-contorno").remove();
     }
 }
 

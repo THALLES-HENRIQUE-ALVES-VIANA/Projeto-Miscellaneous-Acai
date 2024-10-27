@@ -63,3 +63,19 @@ body {
 .requisitos ul{
     margin-top: 5px;
 }
+
+#verificacaoEmail{
+    display: none;
+}
+
+#verificacaoSenha{
+    display: none;
+}
+
+#verificacaoEmailESenha{
+    display: none;
+}
+
+#mensagemErro{
+    color: red;
+}

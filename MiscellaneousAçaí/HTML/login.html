@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="pg">
-        <form class="formLogin" method="post" name="formLogin" action="index.html" onsubmit="return validacao()">
+        <form class="formLogin" method="post" name="formLogin" onsubmit="return validacao()">
             <h1>Login</h1>
             <h2>Bem vindo à Miscellaneous Açaí!</h2> 
             <p>Digite seus dados</p>
@@ -14,7 +14,28 @@
             <input type="email" placeholder="Digite seu e-mail" name="email" id="email"/>
             <label for="password">Senha</label>
             <input type="password" placeholder="Insira a senha" name="senha" id="senha"/>
-            <input type="submit" value="Acessar" class="button"/>
+            <div id="verificacaoEmail">
+                <p id="mensagemErro">Não encontramos nenhuma conta com este e-mail.<br>Se estiver com problemas para acessar sua conta tente:</p>
+                <ul>
+                    <li>Verificar se as informações foram digitadas corretamente</li>
+                    <li>Utilizar outro endereço de e-mail.</li>
+                </ul>
+            </div>
+            <div id="verificacaoSenha">
+                <p id="mensagemErro">Sua senha está incorreta.<br>Se estiver com problemas para acessar sua conta tente:</p>
+                <ul>
+                    <li>Verificar se a senha foi digitada corretamente</li>
+                    <li>Redefinir sua senha.</li>
+                </ul>
+            </div>
+            <div id="verificacaoEmailESenha">
+                <p id="mensagemErro">Não encontramos nenhuma conta com estas informações de login.<br>Se estiver com problemas para acessar sua conta tente:</p>
+                <ul>
+                    <li>Verificar se as informações foram digitadas corretamente</li>
+                    <li>Utilizar outras informações de login.</li>
+                </ul>
+            </div>
+            <input type="button" value="Acessar" class="button" onclick="verificarInfoLogin()"/>
         </form>
     </div>
 </body>

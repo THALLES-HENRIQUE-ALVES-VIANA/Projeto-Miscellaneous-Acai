@@ -11,7 +11,7 @@ const produtos = [
 function pesquisar() {
     // é chamada sempre que o usuário digitar no campo e verifica se o nome de cada produto tem o texto da busca 
     
-    let termo = document.getElementById('urlInput').value;
+    let termo = document.getElementById('urlInput').value.toLowerCase();
     // captura oq foi inserido pelo usuário com campo de entrada id URL input
     
     let resultados = produtos.filter(item => item.toLowerCase().includes(termo));    

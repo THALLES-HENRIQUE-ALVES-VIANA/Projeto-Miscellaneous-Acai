@@ -50,3 +50,7 @@ function apagar(){
 }
 
 document.addEventListener("DOMContentLoaded", apagar());
+
+function produto(item){
+    localStorage.setItem("produto", item);
+}

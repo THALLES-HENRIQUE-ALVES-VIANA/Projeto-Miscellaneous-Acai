@@ -60,5 +60,8 @@ main p:hover {
     transform: scale(1.02); /* aumenta o tamanho */
     transition: transform 0.3s; /* suaviza a transição */
 }
+#gráfico {
+width: 500px;
+}
 
 

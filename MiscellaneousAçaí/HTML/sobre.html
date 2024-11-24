@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="../CSS/sobre.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header id="topo">
@@ -77,6 +78,32 @@
                 alert("Geolocalização não é suportada pelo seu navegador.");
             }
         </script>
+        <h1>ESTATÍSTICAS!</h1>
+<canvas id="gráfico"></canvas>
+<script>
+    const ctx = document.getElementById('gráfico');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['5 estrelas', '4 estrelas', '3 estrelas', '2 estrelas', '1 estrela'],
+        datasets: [{
+          label: '# Avaliações',
+          data: [19, 12, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+
     </main>
     <footer>
         <div class="elementos">

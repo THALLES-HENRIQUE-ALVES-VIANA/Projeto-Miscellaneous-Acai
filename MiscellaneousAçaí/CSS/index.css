@@ -116,3 +116,30 @@ h1{
   translateX(300px)
   translateY(70px)
 }
+
+.fundoMaisPedidos{
+  transform:
+  translateX(300px)
+  translateY(70px);
+  display: inline-block;
+  border-radius: 25px;
+  margin: 10px;
+  width: 32.2%;
+  height: 300px;
+  background-color: #250937;
+}
+
+.fundoMaisPedidos img{
+  height:300px;
+  width: 35%;
+  border-radius:25px
+}
+
+#principal3{
+  margin: 10px;
+  margin-bottom: 50px;
+  width: 65.6%;
+  transform:
+  translateX(300px)
+  translateY(70px)
+}

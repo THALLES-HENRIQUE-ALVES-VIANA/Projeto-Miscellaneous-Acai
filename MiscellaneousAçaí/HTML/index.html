@@ -66,13 +66,34 @@
     </section>
         <h1>PROMOÇÕES</h1>
     <div id="pricipal1">
-        <a href="../HTML/produto.html"> <img src="../imagens/combo.jpg" onclick="produto('combo')"></img></a>
-        <a href="../HTML/produto.html"> <img src="../imagens/combo leitecondensado.png" onclick="produto('leiteCondensado')"></img></a>
-        <a href="../HTML/produto.html"> <img src="../imagens/barca.jpeg" onclick="produto('barca')"></img></a>
+        <a href="../HTML/produto.html"> <img src="../imagens/combo.jpg" onclick="produto('combo')"></a>
+        <a href="../HTML/produto.html"> <img src="../imagens/combo leitecondensado.png" onclick="produto('leiteCondensado')"></a>
+        <a href="../HTML/produto.html"> <img src="../imagens/barca.jpeg" onclick="produto('barca')"></a>
     </div>
         <h1>MAIS PEDIDOS</h1>
-    <div>
-
+    <div id="principal2">
+        <div class="fundoMaisPedidos">
+            <a href="../HTML/produto.html"><img src="../imagens/copo-com-morango.png" onclick="produto('copoComBanana')"></a>
+        </div>
+        <div class="fundoMaisPedidos">
+            <a href="../HTML/produto.html"><img src="../imagens/copo-com-banana.png" onclick="produto('copoComBanana')"></a>
+        </div>
+        <div class="fundoMaisPedidos">
+            <a href="../HTML/produto.html"><img src="../imagens/copo-simples.png" onclick="produto('copoComBanana')"></a>
+        </div>
+        <div class="fundoMaisPedidos">
+            <a href="../HTML/produto.html"><img src="../imagens/barca.jpeg" onclick="produto('copoComBanana')"></a>
+        </div>
+        <div class="fundoMaisPedidos">
+            <a href="../HTML/produto.html"><img src="../imagens/vitamina-acai.jpg" onclick="produto('copoComBanana')"></a>
+        </div>
+        <div class="fundoMaisPedidos">
+            <a href="../HTML/produto.html"><img src="../imagens/combo.jpg" onclick="produto('copoComBanana')"></a>
+        </div>
+    </div>
+    <h1>AVALIAÇÕES</h1>
+    <div id="principal3">
+        <canvas id="graficoMelhorAvaliados"></canvas>
     </div>
 </main>
 <footer>
@@ -107,5 +128,6 @@
     </div>
 </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="../JS/index.js"></script>
 </html>

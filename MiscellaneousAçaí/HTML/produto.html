@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="../CSS/cardapio.css">
     <link rel="stylesheet" href="../CSS/geral.css">
     <meta charset="UTF-8">
-    <title>cardapio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo"></title>
 </head>
 <body>
     <header id="topo">
@@ -37,16 +38,19 @@
     <main>
         <div id="produtos">
             <li>
-                <img src="" alt="">
-                <div class="btn-carrinho">
-                    <figcaption><h1></h1></figcaption>
-                    <h2></h2>
-                    <button class="adicionar-produto" data-id="4"><a href="carrinho.html">Adicionar ao Carrinho</a></button>
-                 </div>
+                <img src="" alt="" id="imagem-produto">
+                <div class="carrinho">
+                    <figcaption><h1 id="nome-produto"></h1></figcaption>
+                    <h2 id="preco"></h2>
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" min="1" value="1" id="quantidade">
+                    <br>
+                    <p>Preço Final: </p><p id="preco-final"></p>
+                    <a onclick="adicionarCarrinho()" href="carrinho.html">Adicionar ao Carrinho</a>
+                </div>
             </li>
         </div>
     </main>
-    <div id="carrinho"></div>
     <footer>
         <div class="elementos">
             <p class="titulo">

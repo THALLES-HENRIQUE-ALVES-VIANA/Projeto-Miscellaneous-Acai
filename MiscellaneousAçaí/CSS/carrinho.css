@@ -1,16 +1,61 @@
-h1 {
-    font-size: 40px;
+.titulo-carrinho{
+    background-color: white;
     color: #651d92;
-    margin-bottom: 30px;
+    width: 10%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
     text-align: center;
-    background-color: #ffffff;
+    font-size: 30;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#lista{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+#lista li{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 10px;
+}
+#lista li p{
+    float: left;
+    margin: 10px;
+}
+.excluir{
+    float: right;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#finalizar-compra{
+    background-color: white;
+    font-size: 25px;
+    color: #651d92;
+    border: none;
     border-radius: 10px;
     padding: 10px;
-    width: 300px;
-    margin: auto;
-    margin-bottom: 20px;
+    cursor: pointer;
 }
-h1 {
-    position: relative;
-    top: 20px;
+footer{
+    position: absolute;
+    bottom: 0;
 }
